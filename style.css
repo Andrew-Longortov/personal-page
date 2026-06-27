@@ -1,0 +1,166 @@
+/* === Сброс и базовые стили === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  color: #2c2c2a;
+  background-color: #f5f4f0;
+  line-height: 1.6;
+}
+
+/* === Навигация === */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 40px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e0dfd8;
+  position: sticky;
+  top: 0;
+}
+
+.logo {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 24px;
+}
+
+nav ul a {
+  text-decoration: none;
+  color: #888780;
+  font-size: 14px;
+}
+
+nav ul a:hover {
+  color: #2c2c2a;
+}
+
+/* === Секции === */
+section {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 60px 24px;
+  border-bottom: 1px solid #e0dfd8;
+}
+
+/* === Обо мне === */
+#about h1 {
+  font-size: 28px;
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+
+#about p {
+  color: #5f5e5a;
+  margin-bottom: 8px;
+}
+
+/* === Навыки === */
+#skills h2 {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #888780;
+  margin-bottom: 16px;
+}
+
+#skills ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+#skills li {
+  background: #ffffff;
+  border: 1px solid #e0dfd8;
+  border-radius: 8px;
+  padding: 10px 16px;
+  font-size: 14px;
+}
+
+/* === Контакты === */
+#contacts h2 {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #888780;
+  margin-bottom: 16px;
+}
+
+.contacts-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  color: #5f5e5a;
+  text-decoration: none;
+  padding: 10px 14px;
+  border: 1px solid #e0dfd8;
+  border-radius: 8px;
+  background: #ffffff;
+  width: fit-content;
+  transition: border-color 0.15s;
+}
+
+.contact-item:hover {
+  border-color: #b4b2a9;
+  color: #2c2c2a;
+}
+
+.contact-icon {
+  font-size: 16px;
+}
+
+/* === Аватар === */
+.avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background-color: #dceaf7;
+  color: #185fa5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+/* === Теги навыков === */
+.skills-tags {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.tag {
+  font-size: 13px;
+  padding: 6px 16px;
+  border-radius: 999px;
+  background: #ffffff;
+  border: 1px solid @d3d1c7;
+  color: #5f5e5a;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
